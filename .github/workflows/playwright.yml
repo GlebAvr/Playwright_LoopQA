@@ -2,6 +2,7 @@ name: Playwright Tests
 
 on:
   push:
+  # Appropriage branches would be placed here, assumming that pushes to develop would trigger test run.
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
@@ -24,10 +25,13 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test --config=playwright.config.js --file ${{ matrix.test-file }}
+    # Multiple browsers would be part of test suite
+    # setting to only chromiun to prevent concurrency issues.
+    # Ideally this would be batched.
+      run: npx playwright test ${{ matrix.test-file }}
     - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
+      if: failure()
       with:
-        name: playwright-report
+        name: playwright-report-${{ matrix.test-file }}
         path: playwright-report/
         retention-days: 30
