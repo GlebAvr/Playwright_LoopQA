@@ -1,0 +1,51 @@
+[
+    {
+      "description": "Should verify 'Implement user authentication' in To Do column with Feature & High Priority tags, GA-1",
+      "application": "web",
+      "header": "Web Application",
+      "column": "toDoTab",
+      "task": "Implement user authentication",
+      "tags": ["featureTag", "priorityTag"]
+    },
+    {
+      "description": "Should verify 'Fix navigation bug' in To Do column with Bug tag, GA-2",
+      "application": "web",
+      "header": "Web Application",
+      "column": "toDoTab",
+      "task": "Fix navigation bug",
+      "tags": ["bugTag"]
+    },
+    {
+      "description": "Should verify 'Design system updates' in In Progress column with Design tag, GA-3",
+      "application": "web",
+      "header": "Web Application",
+      "column": "inProgressTab",
+      "task": "Design system updates",
+      "tags": ["designTag"]
+    },
+    {
+      "description": "Should verify 'Push notification system' in To Do column with Feature tag, GA-4",
+      "application": "mobile",
+      "header": "Mobile Application",
+      "column": "toDoTab",
+      "task": "Push notification system",
+      "tags": ["featureTag"]
+    },
+    {
+      "description": "Should verify 'Offline mode' in In Progress column with Feature & High Priority tags, GA-5",
+      "application": "mobile",
+      "header": "Mobile Application",
+      "column": "inProgressTab",
+      "task": "Offline mode",
+      "tags": ["featureTag", "priorityTag"]
+    },
+    {
+      "description": "Should verify 'App icon design' in Done column with Design tag, GA-6",
+      "application": "mobile",
+      "header": "Mobile Application",
+      "column": "doneTab",
+      "task": "App icon design",
+      "tags": ["designTag"]
+    }
+  ]
+  
